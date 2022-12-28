@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de la vida de Cornway</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpg" href="/images/favicon.png" />
+</head>
+
+<body>
+
+    <h1>Welcome to Conway's game of life</h1>
+
+    <div class="containerButtons">
+
+        <button id="btn_create" class="containerButtons__button">Create Canvas</button>
+
+        <div id="div_canvas" class="canvasButtons">
+            <button id="btn_small" class="canvasButtons__button">Small</button>
+            <button id="btn_medium" class="canvasButtons__button">Medium</button>
+            <button id="btn_large" class="canvasButtons__button">Large</button>
+        </div>
+        
+        <button id="btn_analize" class="containerButtons__button">Play</button>
+        <button id="btn_stop" class="containerButtons__button">Stop</button>
+        <button id="btn_reset" class="containerButtons__button">Reset</button>
+        <button id="btn_speed" class="containerButtons__button">Speed</button>
+
+
+        <div id="div_speed" class="speedButtons">
+            <button id="btn_slow" class="speedButtons__button">Slow</button>
+            <button id="btn_normal" class="speedButtons__button">Normal</button>
+            <button id="btn_fast" class="speedButtons__button">Fast</button>
+        </div>
+    </div>
+
+    <footer>made by bonigustavog@</footer>
+
+    <script src="interactive.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+    <script src="pruebas.js"></script>
+</body>
+
+</html>

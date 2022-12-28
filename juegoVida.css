@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#plano {
+
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+
+.celda {
+    width: 5px;
+    height: 5px;
+}
+
+.celda_viva {
+    background-color: rgb(24, 22, 24);
+}
+
+.celda_muerta {
+    background-color: rgb(245, 245, 248);
+}
+
+button {
+    width: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.botones {
+    width: 50%;
+    margin: auto;
+    margin-top: 3vh;
+    background-color: rgb(36, 33, 33);
+    display: flex;
+    justify-content:space-around ;
+}

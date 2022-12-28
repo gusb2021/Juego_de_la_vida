@@ -1,0 +1,178 @@
+body {
+    display: grid;
+    background-color: darkgray;
+
+}
+
+h1 {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 0.4%;
+    background-color: rgb(94, 91, 91);
+    color: white;
+}
+
+#plano {
+    background-image: linear-gradient(0deg, rgba(240, 240, 236, 0.386) 0%, rgba(233, 238, 232, 0.621) 80%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.celda {
+    width: 5px;
+    height: 5px;
+}
+
+.celda_viva {
+    background-color: rgb(24, 22, 24);
+
+}
+
+.celda_muerta {
+    background-color: rgb(245, 245, 248);
+    opacity: 50%;
+}
+
+
+
+button {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 2%;
+    font-size: 70%;
+    border: none;
+}
+
+
+.canvasButtons,
+.speedButtons {
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.containerButtons__button {
+    background-color: brown;
+    color: aliceblue;
+}
+
+.speedButtons__button,
+.canvasButtons__button {
+    background-color: aquamarine;
+    width: 4vw;
+    height: 4vw;
+
+}
+
+.containerButtons {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border-radius: 25px;
+    background-color: lightcoral;
+}
+
+
+.button--clicked {
+    background-color: azure;
+}
+
+footer {
+    background-color: rgb(94, 91, 91);
+    padding-top: 0.2%;
+    color: white;
+    text-align: end;
+    padding-right: 2%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    body {
+
+        grid-template-areas: "top top"
+            "sideLeft sideRigth"
+            "bottom bottom";
+        grid-template-columns: 8vw 92vw;
+        grid-template-rows: 6vh 90vh 4vh;
+    }
+
+    h1 {
+        grid-area: top;
+    }
+
+    #plano {
+        grid-area: sideRigth;
+    }
+
+    .containerButtons {
+        grid-area: sideLeft;
+    }
+
+    footer {
+        grid-area: bottom;
+
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    body {
+
+        grid-template-areas: "top"
+            "center"
+            "bottom";
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 86vh 4vh;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #plano {
+        grid-area: center;
+    }
+
+    .containerButtons {
+        width: 100%;
+        grid-area: top;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .canvasButtons,
+    .speedButtons {
+        width: auto;
+        display: none;
+        flex-wrap:nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    footer {
+        grid-area: bottom;
+
+    }
+}
+
+
+
+
+
+
+
+
+/* 320px 768px 1200px */
